@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dates properties:</h1>
+    <p id="new"></p>
+    <p id="new2"></p>
+    <p id="new3"></p>
+    <p id="new4"></p>
+    <p id="new5"></p>
+    <p id="new6"></p>
+    <p id="new7"></p>
+    <p id="new8"></p>
+    <p id="new9"></p>
+    <p id="new10"></p>
+    <p id="new11"></p>
+    <script>
+        const d= new Date();
+        document.getElementById("new").innerHTML="<p>Current date and time: </p>"+d;
+
+        const a= new Date(2012,11,24,10,32,30,0);
+        document.getElementById("new2").innerHTML="<p>7 numbers specify year, month, day, hour, minute, second, and millisecond (in that order): </p>"+a;
+
+        const b= new Date("2015-03-25");
+        document.getElementById("new3").innerHTML="<p>ISO date and time: </p>"+b;
+
+        const c = new Date("03/25/2014");
+        document.getElementById("new4").innerHTML="<p>short date and time: </p>"+c;
+
+        const e = new Date("March 22 2018");
+        document.getElementById("new5").innerHTML="<p>long date and time: </p>"+e;
+
+        const f = Date.parse("May 12 2019");
+        document.getElementById("new6").innerHTML="<p>parse method for converting mel sec.: </p>"+f;
+
+        const g = new Date();
+        document.getElementById("new7").innerHTML="<p>get full year: </p>"+g.getFullYear();
+
+        const h = new Date();
+        document.getElementById("new8").innerHTML="<p>get full month: </p>"+g.getMonth();
+
+        const i = new Date();
+        document.getElementById("new9").innerHTML="<p>get full hour: </p>"+g.getHours();
+
+        const  j= new Date();
+        j.setDate(10);
+        document.getElementById("new10").innerHTML="<p>set full date: </p>"+j;
+
+        const k= new Date();
+        k.getMinutes(40);
+        document.getElementById("new11").innerHTML="<p>set full Min: </p>"+k;
+
+    </script>
+</body>
+</html>
